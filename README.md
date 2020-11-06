@@ -28,3 +28,22 @@ def wordToSeg(x):
     if not jieba.dt.initialized:
         jieba.load_userdict('mydict_3.txt')
 ```
+
+## Spark SQL - Appllying wordToSeg()
+Call UDF-wordToSeg() in Spark SQL syntax. Quickly apply UDF to specified columns on each record.
+
+```
+recipes_seg = spark.sql('''select url, img_url, title, time, author, word2Seg(ingredient) ingredient, 
+                        word2Seg(steps) steps, word2Seg(comment) comment,
+                        word2Seg(category) category from recipes''')
+```
+
+
+## Define UDF - wordToList()
+Defining function to split strings into list contains segmented words
+
+## Spark SQL - Applying wordToList()
+Call UDF-wordToList() in Spark SQL syntax, spliting words into list on specified columns from all records.
+
+## word2Vec Training
+
