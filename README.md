@@ -14,11 +14,12 @@ Implementing Spark distributed computing platform to train word2vec model
 * word2Vec Training
 
 
-1. Define UDF - wordToSeg
+## Define UDF - wordToSeg
 Implmenting refular expression to remove all non-Chinese character, then utilize jieba libraries to segment words.
 
-** Use addFile() to deliver user defined dictionary to all nodes in Spark cluster for jieba word segmentation. **
-** Use jieba.dt.initialized to make sure jieba only impoer user defined dictionary once. **
+**Use addFile() to deliver user defined dictionary to all nodes in Spark cluster for jieba word segmentation.**
+
+**Use jieba.dt.initialized to make sure jieba only impoer user defined dictionary once.**
 
 
 ```
