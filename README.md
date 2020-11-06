@@ -7,4 +7,13 @@ Implementing Spark distributed computing platform to train word2vec model
 
 * Spark SQL - Appllying wordToSeg()
 
-* Define UDF - 
+* Define UDF - wordToList()
+
+* Spark SQL - Applying wordToList()
+
+* word2Vec Training
+
+
+## Define UDF - wordToSeg
+
+
