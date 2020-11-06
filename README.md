@@ -11,7 +11,7 @@ Implementing Spark distributed computing platform to train word2vec model
 
 * Spark SQL - Applying wordToList()
 
-* word2Vec Training
+* word2Vec Training & transform raw data into vectors
 
 
 ## Define UDF - wordToSeg
@@ -45,5 +45,7 @@ Defining function to split strings into list contains segmented words
 ## Spark SQL - Applying wordToList()
 Call UDF-wordToList() in Spark SQL syntax, spliting words into list on specified columns from all records.
 
-## word2Vec Training
+## word2Vec Training & transform raw data into vectors
+Fit model. And implement .transform founction to the desired columns, quickly apply embedding to all records.
+
 
