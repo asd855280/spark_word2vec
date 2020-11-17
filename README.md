@@ -1,7 +1,7 @@
 # spark_word2vec
 Implementing Spark distributed computing platform to train word2vec model
 
-Steps for setting up Spark Cluster[https://wang-kuanchih.medium.com/setting-up-apache-spark-cluster-bfc9fec3ec4]
+Steps for setting up Spark Cluster[my medium page](https://medium.com/@wang.kuanchih/fundamental-networking-setting-vpc-subnets-igw-route-table-and-instance-on-aws-115f9c096c51).
 
 ## Content
 * Define UDF - wordToSeg
